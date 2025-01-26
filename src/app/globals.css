@@ -40,3 +40,391 @@ a {
     color-scheme: dark;
   }
 }
+
+.nav {
+  background-color: #8b4513;
+  /* رنگ پس‌زمینه */
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.nav a {
+  color: white;
+  /* رنگ متن */
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #f59e0b;
+  /* تغییر رنگ هنگام هاور */
+}
+
+.nav a:active {
+  color: #d97706;
+  /* تغییر رنگ هنگام کلیک */
+}
+
+/* استایل برای بخش Hero */
+.hero {
+  background-image: url('./Coffe.jpg');
+  /* لینک به تصویر */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* استایل برای متن داخل Hero */
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+/* دکمه‌ها */
+.hero button {
+  margin: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hero .btn-primary {
+  background-color: #b5651d;
+  /* قهوه‌ای روشن */
+  color: white;
+}
+
+.hero .btn-primary:hover {
+  background-color: #8b4513;
+  /* قهوه‌ای تیره‌تر */
+}
+
+.hero .btn-secondary {
+  background-color: #3c3c3c;
+  /* خاکستری تیره */
+  color: white;
+}
+
+.hero .btn-secondary:hover {
+  background-color: #2a2a2a;
+  /* خاکستری تیره‌تر */
+}
+
+/* بخش‌های اصلی */
+.introduction,
+.highlights,
+.blog {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.introduction h2,
+.blog h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4e342e;
+  /* قهوه‌ای تیره */
+}
+
+.introduction p,
+.blog p {
+  margin-top: 1rem;
+  color: #6d4c41;
+  /* قهوه‌ای ملایم */
+}
+
+/* بخش‌های برجسته */
+.highlights {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.highlights .highlight {
+  background-color: #efebe9;
+  /* کرم روشن */
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  flex: 1 1 30%;
+}
+
+.highlights .highlight h3 {
+  color: #5d4037;
+  /* قهوه‌ای تیره */
+}
+
+.highlights .highlight p {
+  color: #8d6e63;
+  /* قهوه‌ای ملایم */
+}
+
+/* فوتر */
+.footer {
+  background-color: #3e2723;
+  /* قهوه‌ای تیره */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* 
+.home-page  {
+  background-image: url('./Coffe.jpg');
+} */
+/* کانتینر اصلی */
+.container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* فایل page.module.css */
+.containerB {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+.simbol {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.mini-simbol {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.mini-simbol img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-left: 15px;
+}
+
+.mini-simbol h3 {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.mother-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.mother-list li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mother-list li:hover {
+  transform: translateY(-5px);
+}
+
+.mother-list h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.mother-list img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.mother-list p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+/* انیمیشن فید این */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.coffee-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #f4ede2;
+  /* پس زمینه قهوه‌ای ملایم */
+  color: #5b4636;
+  /* رنگ متن قهوه‌ای تیره */
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.coffee-detail img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.coffee-detail h1 {
+  font-size: 2em;
+  margin: 10px 0;
+  color: #3e2723;
+  /* رنگ متن عنوان قهوه‌ای تیره‌تر */
+}
+
+.coffee-detail p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6d4c41;
+  /* پس‌زمینه قهوه‌ای */
+  color: #ffffff;
+  /* رنگ متن سفید */
+  border: none;
+  border-radius: 5px;
+  /* گوشه‌های گرد */
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-link:hover {
+  background-color: #5b4636;
+  /* تغییر رنگ پس‌زمینه هنگام هاور */
+  transform: scale(1.05);
+  /* کمی بزرگ‌تر شدن هنگام هاور */
+}
+
+.button-link:active {
+  background-color: #4e342e;
+  /* رنگ پس‌زمینه هنگام کلیک */
+  transform: scale(0.95);
+  /* کمی کوچک‌تر شدن هنگام کلیک */
+}
+
+.coffee-container {
+  font-family: 'Arial, sans-serif';
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.coffee-container h1 {
+  color: #6B4F4F;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.coffee-container h3 {
+  color: #8B5E3C;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.coffee-types {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 آیتم در هر ردیف */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.coffee-type {
+  margin: 0 auto;
+  width: 500px;
+  /* برای مرکز قرار گرفتن آیتم‌ها */
+  padding: 15px;
+  background-color: #f0ebe4;
+  border-radius: 20px;
+  /* گوشه‌های گرد */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  /* افکت هاور */
+}
+
+.coffee-type:hover {
+  transform: scale(1.05);
+  /* بزرگ‌تر شدن در هاور */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  /* تغییر سایه در هاور */
+}
+
+.coffee-type h2 {
+  color: #4A3F35;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.coffee-type p {
+  color: #6B4F4F;
+  font-size: 14px;
+}
+
+.coffee-type img {
+  margin: 10px;
+  width: 100%;
+  max-width: 200px;
+  height: 150px;
+  /* کاهش ارتفاع برای تناسب */
+  border-radius: 15px;
+  /* گوشه‌های گرد تصویر */
+  object-fit: cover;
+  /* حفظ نسبت تصویر */
+  margin-bottom: 10px;
+}
