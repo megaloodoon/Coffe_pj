@@ -293,66 +293,82 @@ a {
   justify-content: center;
   text-align: center;
   min-height: 100vh;
-  background-color: #f4ede2;
-  /* پس زمینه قهوه‌ای ملایم */
+  background: linear-gradient(to bottom, #f4ede2, #e5d4c5);
+  /* پس زمینه گرادیان قهوه‌ای ملایم */
   color: #5b4636;
   /* رنگ متن قهوه‌ای تیره */
   padding: 20px;
   font-family: 'Arial', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.coffee-detail::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 236, 179, 0.5);
+  border-radius: 50%;
+  z-index: 0;
 }
 
 .coffee-detail img {
   width: 600px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-bottom: 20px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.coffee-detail img:hover {
+  transform: scale(1.05);
 }
 
 .coffee-detail h1 {
-  font-size: 2em;
-  margin: 10px 0;
+  font-size: 2.5em;
+  margin: 15px 0;
   color: #3e2723;
-  /* رنگ متن عنوان قهوه‌ای تیره‌تر */
+  background: linear-gradient(to right, #8d6e63, #4e342e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
 }
 
 .coffee-detail p {
   font-size: 1.2em;
-  line-height: 1.6;
+  line-height: 1.8;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 .button-link {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #6d4c41;
-  /* پس‌زمینه قهوه‌ای */
-  color: #ffffff;
-  /* رنگ متن سفید */
-  border: none;
-  border-radius: 5px;
-  /* گوشه‌های گرد */
-  text-align: center;
-  text-decoration: none;
   font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  color: #fff;
+  background: #6d4c41;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 1;
 }
 
 .button-link:hover {
-  background-color: #5b4636;
-  /* تغییر رنگ پس‌زمینه هنگام هاور */
-  transform: scale(1.05);
-  /* کمی بزرگ‌تر شدن هنگام هاور */
+  background: #5d4037;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.button-link:active {
-  background-color: #4e342e;
-  /* رنگ پس‌زمینه هنگام کلیک */
-  transform: scale(0.95);
-  /* کمی کوچک‌تر شدن هنگام کلیک */
-}
 
 .coffee-container {
   font-family: 'Arial, sans-serif';

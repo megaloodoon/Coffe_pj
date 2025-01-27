@@ -2,7 +2,7 @@
 export default function CoffeeTypes() {
     return (
         <div className="coffee-container">
-            <h1>انواع قهوه</h1>
+            <h1>انواع سرو قهوه</h1>
 
             <h3>در اینجا به مدل های مختلف سرو قهوه میپردازیم </h3>
             <div className="coffee-types">
@@ -84,6 +84,21 @@ export default function CoffeeTypes() {
                     <p>قهوه‌ای که با آب سرد به مدت طولانی (بین 12 تا 24 ساعت) دم می‌شود، طعم ملایم‌تر و کافئین بالاتری دارد.</p>
                     <img src={"/image/Types/coldbrew.jpg"} alt="" />
                 </div>
+
+                <div className="coffee-type">
+                    <h2> کارامل ماکیاتو </h2>
+                    <p>
+                        یکی از محبوب‌ترین نوشیدنی‌های قهوه است که ترکیبی از اسپرسو، شیر گرم، وانیل و سس کارامل است. این نوشیدنی هم طعم شیرینی کارامل رو داره و هم تلخی ملایم اسپرسو که با هم یه تعادل لذت‌بخش ایجاد می‌کنن.
+                    </p>
+                    <img src={"/image/Types/Caramel-Macchiato1.jpg"} alt="" />
+                </div>
+
+                <div className="coffee-type">
+                    <h2>ریسترتو</h2>
+                    <p>نسخه غلیظ‌تر و کوتاه‌تر اسپرسو با طعم شدیدتر. این نوع سرو برای عاشقان واقعی قهوه، تجربه‌ای خاص و متفاوته.</p>
+                    <img src={"/image/Types/Ristretto.jpg"} alt="" />
+                </div>
+
             </div>
         </div>
     );
